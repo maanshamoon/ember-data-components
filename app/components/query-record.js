@@ -1,0 +1,1 @@
+export { default } from 'ember-data-components/components/query-record';
