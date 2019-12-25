@@ -11,7 +11,7 @@ export default class FindRecordComponent extends Component {
     const reload = this.args.reload === undefined ? false : this.args.reload;
     const backgroundReload = this.args.backgroundReload === undefined ? false : this.args.backgroundReload;
 
-    return this.store.peekRecord(this.args.modelName, this.args.id, { reload, backgroundReload })
+    return this.store.findRecord(this.args.modelName, this.args.id, { reload, backgroundReload })
       .then(() => {
         this.isLoading = false;
       })
