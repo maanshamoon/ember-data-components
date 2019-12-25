@@ -12,11 +12,7 @@ export default class FindRecordComponent extends Component {
     const backgroundReload = this.args.backgroundReload === undefined ? false : this.args.backgroundReload;
 
     return this.store.findRecord(this.args.modelName, this.args.id, { reload, backgroundReload })
-      .then(() => {
-        this.isLoading = false;
-      })
-      .catch(() => {
-        this.hasError = true;
-      });
+    .then(() => this.isLoading = false)
+    .catch(() => this.hasError = true);
   }
 }

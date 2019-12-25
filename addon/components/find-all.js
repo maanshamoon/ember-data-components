@@ -12,11 +12,7 @@ export default class FindAllComponent extends Component {
 		const backgroundReload = this.args.backgroundReload === undefined ? false : this.args.backgroundReload;
 
 		return this.store.findAll(this.args.modelName, { reload, backgroundReload })
-			.then(() => {
-				this.isLoading = false;
-			})
-			.catch(() => {
-				this.hasError = true;
-			});
+			.then(() => this.isLoading = false)
+			.catch(() => this.hasError = true);
 	}
 }
