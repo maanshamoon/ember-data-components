@@ -1,5 +1,9 @@
-{{yield
-	this.data
-	this.isLoading
-	this.hasError
-}}
+<div
+  {{did-insert this.fetch}}
+>
+	{{yield
+		this.data.last.value
+		this.data.isRunning
+		this.hasError
+	}}
+</div>
