@@ -1,3 +1,103 @@
-<h2 id="title">Welcome to Ember</h2>
+{{!-- <FindRecord
+	@modelName = "post"
+	@id = 1
+	as |data isLoading hasError|
+>
+	{{#if isLoading}}
+		loading...
+	{{else if hasError}}
+		error...
+	{{else}}
+		{{data.title}}
+	{{/if}}
+</FindRecord> --}}
 
-{{outlet}}
+{{!-- <PeekRecord
+    @modelName = "post"
+    @id = 1
+    as |post|
+>
+    {{post.title}}
+</PeekRecord> --}}
+
+{{!-- <FindAll
+    @modelName = "post"
+    as |posts isLoading hasError|
+>
+	{{#if isLoading}}
+		loading...
+	{{else if hasError}}
+		error...
+	{{else}}
+		{{#each posts as |post|}}
+			{{post.title}}<br>
+		{{/each}}
+	{{/if}}
+
+</FindAll> --}}
+
+{{!-- <PeekAll
+    @modelName = "post"
+    as |posts|
+>
+    {{#each posts as |post|}}
+        {{post.title}}
+    {{/each}}
+</PeekAll> --}}
+
+{{!-- <FindRecord
+    @modelName = "post"
+    @id = 1 as |post isLoading hasError|
+>
+    {{#if isLoading}}
+        // loading post data
+    {{else if hasError}}
+        // show error
+    {{else if data}}
+        // show post data
+    {{/if}}
+</FindRecord> --}}
+
+
+{{!-- <Query
+	@modelName = "post"
+	@params = {{hash
+		filter = (hash
+			name = "abc"
+			number = 123
+		)
+		title = "something"
+	}} as |posts isLoading hasError|
+>
+	{{#if isLoading}}
+		loading...
+	{{else if hasError}}
+		error...
+	{{else}}
+		{{#each posts as |post|}}
+			{{post.title}}
+		{{/each}}
+	{{/if}}
+</Query> --}}
+
+<QueryRecord
+	@modelName = "post"
+	@params = {{hash
+		filter = (hash
+			name = "abc"
+			number = 123
+		)
+		title = "something"
+	}}
+	as |posts isLoading hasError|
+>
+	{{#if isLoading}}
+		loading...
+	{{else if hasError}}
+		error...
+	{{else}}
+		{{#each posts as |post|}}
+			{{post.title}}
+		{{/each}}
+	{{/if}}
+</QueryRecord>
