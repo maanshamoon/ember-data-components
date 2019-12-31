@@ -1,0 +1,19 @@
+{{#docs-viewer as |viewer|}}
+    {{#viewer.nav as |nav|}}
+        {{nav.section 'Introduction'}}
+        {{nav.item 'Introduction' 'docs.index'}}
+        {{nav.item "Installation" "docs.installation"}}
+        {{nav.section 'Components'}}
+        {{nav.item "Find Record" "docs.components.find-record"}}
+        {{nav.item "Peek Record" "docs.components.peek-record"}}
+        {{nav.item "Find All" "docs.components.find-all"}}
+        {{nav.item "Peek All" "docs.components.peek-all"}}
+        {{nav.item "Query" "docs.components.query"}}
+        {{nav.item "Query Record" "docs.components.query-record"}}
+    {{/viewer.nav}}
+
+    {{#viewer.main}}
+        {{outlet}}
+    {{/viewer.main}}
+{{/docs-viewer}}
+

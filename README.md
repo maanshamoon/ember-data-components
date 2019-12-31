@@ -111,7 +111,7 @@ Basic example (Makes a `[GET]` request to `/posts`)
 
 Advanced example (Makes a `[GET]` request to `/posts`)
 ```handlebars 
-<FindRecord
+<FindAll
     @modelName = "post"
     @backgroundReload = true
     as |posts isLoading hasError|
@@ -125,7 +125,7 @@ Advanced example (Makes a `[GET]` request to `/posts`)
             {{post.title}}
         {{/each}}
     {{/if}}
-</FindRecord>
+</FindAll>
 ```
 
 ### Peek All
