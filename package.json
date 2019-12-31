@@ -1,13 +1,16 @@
 {
   "name": "ember-data-components",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "1.0.0",
+  "description": "A set of components that provides an interface for retrieving records with Ember Data directly from templates.",
   "keywords": [
     "ember-addon"
   ],
-  "repository": "",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/maanshamoon/ember-data-components"
+  },
   "license": "MIT",
-  "author": "",
+  "author": "Maan Shamoon",
   "directories": {
     "doc": "doc",
     "test": "tests"
