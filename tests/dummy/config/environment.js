@@ -29,6 +29,7 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.rootURL = '/ember-data-components/';
   }
 
   if (environment === 'test') {
@@ -45,7 +46,7 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     // Allow ember-cli-addon-docs to update the rootURL in compiled assets
-    ENV.rootURL = 'ADDON_DOCS_ROOT_URL';
+    ENV.rootURL = '/ember-data-components/';
   }
 
   return ENV;

@@ -1,5 +1,5 @@
-{{#docs-viewer as |viewer|}}
-    {{#viewer.nav as |nav|}}
+<DocsViewer as |Viewer|>
+    <Viewer.Nav as |nav|>
         {{nav.section 'Introduction'}}
         {{nav.item 'Introduction' 'docs.index'}}
         {{nav.item "Installation" "docs.installation"}}
@@ -10,10 +10,11 @@
         {{nav.item "Peek All" "docs.components.peek-all"}}
         {{nav.item "Query" "docs.components.query"}}
         {{nav.item "Query Record" "docs.components.query-record"}}
-    {{/viewer.nav}}
+    </Viewer.Nav>
 
-    {{#viewer.main}}
+    <Viewer.Main>
         {{outlet}}
-    {{/viewer.main}}
-{{/docs-viewer}}
+    </Viewer.Main>
+</DocsViewer>
+
 

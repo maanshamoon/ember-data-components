@@ -9,15 +9,15 @@ export default class FindAllComponent extends Component {
 	@tracked hasError = false;
 
 	@(task(function * () {
-	  const reload = this.args.reload === undefined ? false : this.args.reload;
-	  const backgroundReload = this.args.backgroundReload === undefined ? false : this.args.backgroundReload;
-	  return yield this.store.findAll(this.args.modelName, { reload, backgroundReload })
-	  .then(response => response)
-	  .catch(() => this.hasError = true);
+		const reload = this.args.reload === undefined ? false : this.args.reload;
+		const backgroundReload = this.args.backgroundReload === undefined ? false : this.args.backgroundReload;
+		return yield this.store.findAll(this.args.modelName, { reload, backgroundReload })
+		.then(response => response)
+		.catch(() => this.hasError = true);
 	})) data;
-  
+
 	@action
 	fetch() {
-	  this.data.perform();
+		this.data.perform();
 	}
 }

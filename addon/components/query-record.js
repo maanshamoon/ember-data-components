@@ -9,13 +9,13 @@ export default class QueryRecordComponent extends Component {
 	@tracked hasError = false;
 
 	@(task(function * () {
-	  return yield this.store.query(this.args.modelName, this.args.params)
-	  .then(response => response)
-	  .catch(() => this.hasError = true);
+		return yield this.store.query(this.args.modelName, this.args.params)
+		.then(response => response)
+		.catch(() => this.hasError = true);
 	})) data;
 
-  @action
-  fetch() {
-    this.data.perform();
-  }
+	@action
+	fetch() {
+		this.data.perform();
+	}
 }

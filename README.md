@@ -2,7 +2,11 @@
 
 Built with ❤️ in [Ember Octane](https://emberjs.com/editions/octane/).
 
-A collection of components that provides an interface for retrieving records with Ember Data directly from templates.
+A set of components that provides an interface for retrieving records with Ember Data directly from templates.
+
+## Live Docs
+[Here](https://maanshamoon.github.io/ember-data-components/)
+
 
 ## Installation
 
