@@ -1,0 +1,21 @@
+:root {
+    --brand-primary: #42d7f5;   
+}
+
+.docs-bg-brand {
+    margin: 6rem;
+    background-color: #FFF !important;
+    color: #000;
+    border-radius: 4px;
+    box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.20);
+}
+
+.docs-text-brand {
+    color: #000 !important;
+}
+
+@media screen and (max-width: 600px) {
+    .docs-bg-brand {
+        margin: 0;
+    }
+}
